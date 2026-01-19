@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Neo-Brutalista -->
+    <title>CONSTRUCTA /// MADRID - Reformas Sin Filtro</title>
+    <meta name="description" content="Constructora técnica en Madrid. Hormigón, acero y transparencia radical. Reformas integrales para quienes valoran la estructura sobre el maquillaje.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CONSTRUCTA /// MADRID">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1706449850337-a3879b43ad9a?q=80&w=1200">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'mono': ['Oswald', 'sans-serif'],
+                        'sans': ['Archivo', 'sans-serif']
+                    },
+                    colors: {
+                        'neon': '#FAFF00',
+                        'raw': '#1a1a1a'
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Neo-Brutalist CSS */
+        body { cursor: crosshair; }
+        .brutal-border { border: 3px solid black; box-shadow: 8px 8px 0px black; transition: all 0.1s; }
+        .brutal-border:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px black; }
+        .brutal-border:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0px black; }
+        .marquee-container { overflow: hidden; white-space: nowrap; }
+        .marquee-content { display: inline-block; animation: marquee 20s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .grid-bg { background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px); background-size: 40px 40px; background-color: #fff; opacity: 0.05; }
+    </style>
+</head>
+<body class="bg-white text-black font-sans selection:bg-black selection:text-neon">
+
+    <!-- WhatsApp Floating (Brutalist Style) -->
+    <a href="https://wa.me/34600000000" class="fixed bottom-8 right-8 z-50 bg-black text-neon w-16 h-16 flex items-center justify-center border-4 border-neon shadow-[4px_4px_0px_black] hover:shadow-[8px_8px_0px_black] transition-all font-black text-2xl">
+        WA
+    </a>
+
+    <!-- Nav -->
+    <nav class="fixed w-full top-0 z-40 bg-white border-b-4 border-black">
+        <div class="flex justify-between items-stretch h-20">
+            <a href="index.html" class="flex items-center px-8 font-mono text-3xl font-bold tracking-tighter bg-neon border-r-4 border-black hover:bg-black hover:text-neon transition-colors">
+                CONSTRUCTA /// MADRID
+            </a>
+            
+            <div class="hidden md:flex flex-1 justify-end">
+                <a href="proyectos.html" class="flex items-center px-8 border-l-4 border-black font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-widest text-sm">
+                    [01] Proyectos
+                </a>
+                <a href="manifiesto.html" class="flex items-center px-8 border-l-4 border-black font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-widest text-sm">
+                    [02] Manifiesto
+                </a>
+                <a href="presupuesto.html" class="flex items-center px-12 bg-black text-white font-bold hover:bg-neon hover:text-black transition-colors uppercase tracking-widest text-sm">
+                    Inicia Obra ->
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero: Typography & Grid -->
+        <section class="relative min-h-[90vh] flex flex-col border-b-4 border-black relative">
+            <div class="absolute inset-0 grid-bg pointer-events-none"></div>
+            
+            <div class="flex-1 flex flex-col justify-center px-6 md:px-12 pt-20">
+                <h1 class="font-mono font-bold leading-[0.85] uppercase" style="font-size: clamp(4rem, 15vw, 12rem);">
+                    Reformas<br>
+                    <span class="bg-black text-white px-2">Radicales</span><br>
+                    Madrid
+                </h1>
+            </div>
+
+            <!-- Marquee -->
+            <div class="border-t-4 border-black bg-neon py-4 overflow-hidden border-b-4">
+                <div class="marquee-container">
+                    <div class="marquee-content font-mono font-bold text-2xl uppercase tracking-widest">
+                        /// ALBAÑILERÍA PESADA /// ESTRUCTURAS METÁLICAS /// INSTALACIONES INDUSTRIALES /// DEMOLICIÓN TÉCNICA /// ALBAÑILERÍA PESADA /// ESTRUCTURAS METÁLICAS /// INSTALACIONES INDUSTRIALES /// DEMOLICIÓN TÉCNICA
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statement Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 border-b-4 border-black">
+            <div class="p-12 md:p-24 border-b-4 md:border-b-0 md:border-r-4 border-black flex flex-col justify-center bg-raw text-white">
+                <h2 class="font-mono text-5xl md:text-6xl mb-8 uppercase">No somos<br>interioristas.</h2>
+                <p class="text-xl font-bold font-mono text-neon mb-4">/// SOMOS CONSTRUCTORES</p>
+                <p class="text-lg leading-relaxed text-gray-400">
+                    Odiamos el pladur mal puesto y las juntas que no casan. En Constructa nos obsesiona la estructura, el material crudo y la ejecución técnica perfecta. Si buscas cojines bonitos, llama a otro. Si quieres tirar un muro de carga, llámanos.
+                </p>
+            </div>
+            <div class="relative min-h-[500px]">
+                <img src="https://images.unsplash.com/photo-1706449850337-a3879b43ad9a?ixlib=rb-4.1.0&q=80" class="absolute inset-0 w-full h-full object-cover grayscale contrast-125" alt="Estructura de hormigón">
+                <div class="absolute inset-0 bg-neon mix-blend-multiply opacity-40"></div>
+            </div>
+        </section>
+
+        <!-- Services List (Brutalist List) -->
+        <section class="bg-white">
+            <div class="grid grid-cols-1">
+                <!-- Item 1 -->
+                <div class="group border-b-4 border-black hover:bg-black hover:text-white transition-colors cursor-pointer">
+                    <a href="presupuesto.html" class="block p-8 md:p-16 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <h3 class="text-4xl md:text-6xl font-mono font-bold uppercase group-hover:translate-x-4 transition-transform">01. Demolición</h3>
+                        <p class="text-sm font-bold border-2 border-black px-4 py-1 rounded-full group-hover:border-white group-hover:bg-neon group-hover:text-black mt-4 md:mt-0">VER DETALLES</p>
+                    </a>
+                </div>
+                <!-- Item 2 -->
+                <div class="group border-b-4 border-black hover:bg-black hover:text-white transition-colors cursor-pointer">
+                    <a href="presupuesto.html" class="block p-8 md:p-16 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <h3 class="text-4xl md:text-6xl font-mono font-bold uppercase group-hover:translate-x-4 transition-transform">02. Estructura</h3>
+                        <p class="text-sm font-bold border-2 border-black px-4 py-1 rounded-full group-hover:border-white group-hover:bg-neon group-hover:text-black mt-4 md:mt-0">VER DETALLES</p>
+                    </a>
+                </div>
+                <!-- Item 3 -->
+                <div class="group border-b-4 border-black hover:bg-black hover:text-white transition-colors cursor-pointer">
+                    <a href="presupuesto.html" class="block p-8 md:p-16 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <h3 class="text-4xl md:text-6xl font-mono font-bold uppercase group-hover:translate-x-4 transition-transform">03. Instalaciones</h3>
+                        <p class="text-sm font-bold border-2 border-black px-4 py-1 rounded-full group-hover:border-white group-hover:bg-neon group-hover:text-black mt-4 md:mt-0">VER DETALLES</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Grid -->
+        <section class="grid grid-cols-2 md:grid-cols-4 border-b-4 border-black bg-neon">
+            <div class="p-8 border-r-4 border-b-4 md:border-b-0 border-black text-center">
+                <p class="text-5xl font-mono font-bold">15</p>
+                <p class="text-xs font-bold uppercase">Años Picando</p>
+            </div>
+            <div class="p-8 border-r-4 border-b-4 md:border-b-0 border-black text-center">
+                <p class="text-5xl font-mono font-bold">340</p>
+                <p class="text-xs font-bold uppercase">Obras Totales</p>
+            </div>
+            <div class="p-8 border-r-4 border-black text-center">
+                <p class="text-5xl font-mono font-bold">0%</p>
+                <p class="text-xs font-bold uppercase">Sobrecostes</p>
+            </div>
+            <div class="p-8 text-center bg-black text-white flex flex-col justify-center">
+                <p class="text-xs font-bold uppercase mb-2">Estado Actual</p>
+                <p class="text-xl font-mono text-neon animate-pulse">● ACEPTANDO OBRAS</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black text-white p-12 md:p-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h4 class="font-mono text-4xl mb-8 uppercase">Madrid<br>Central</h4>
+                <p class="font-mono text-xl">C/ INDUSTRIAL, 88<br>NAVE 4<br>MADRID 28000</p>
+            </div>
+            <div class="flex flex-col justify-between items-start md:items-end">
+                <a href="mailto:obra@constructa.madrid" class="font-mono text-2xl md:text-4xl underline decoration-neon decoration-4 underline-offset-8 hover:bg-neon hover:text-black transition-colors mb-8">
+                    OBRA@CONSTRUCTA.MADRID
+                </a>
+                <p class="text-gray-500 text-sm uppercase">© 2026 CONSTRUCTA INC. NO BS.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
