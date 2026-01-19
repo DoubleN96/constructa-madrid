@@ -1,177 +1,187 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Neo-Brutalista -->
-    <title>CONSTRUCTA /// MADRID - Reformas Sin Filtro</title>
-    <meta name="description" content="Constructora técnica en Madrid. Hormigón, acero y transparencia radical. Reformas integrales para quienes valoran la estructura sobre el maquillaje.">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="CONSTRUCTA /// MADRID">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1706449850337-a3879b43ad9a?q=80&w=1200">
+    <title>NOVA | Constructora y Reformas de Alta Gama en Madrid</title>
+    <meta name="description" content="Excelencia en ejecución de obra. Especialistas en reformas integrales y construcción residencial de lujo en Madrid.">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        'mono': ['Oswald', 'sans-serif'],
-                        'sans': ['Archivo', 'sans-serif']
+                        'head': ['Outfit', 'sans-serif'],
+                        'body': ['Plus Jakarta Sans', 'sans-serif']
                     },
                     colors: {
-                        'neon': '#FAFF00',
-                        'raw': '#1a1a1a'
+                        'nova-navy': '#1E293B',
+                        'nova-blue': '#3B82F6',
+                        'nova-gray': '#F1F5F9',
+                        'nova-text': '#334155'
                     },
-                    spacing: {
-                        '128': '32rem',
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 40px -5px rgba(0, 0, 0, 0.1)'
                     }
                 }
             }
         }
     </script>
-    <style>
-        /* Neo-Brutalist CSS */
-        body { cursor: crosshair; }
-        .brutal-border { border: 3px solid black; box-shadow: 8px 8px 0px black; transition: all 0.1s; }
-        .brutal-border:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px black; }
-        .brutal-border:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0px black; }
-        .marquee-container { overflow: hidden; white-space: nowrap; }
-        .marquee-content { display: inline-block; animation: marquee 20s linear infinite; }
-        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .grid-bg { background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px); background-size: 40px 40px; background-color: #fff; opacity: 0.05; }
-    </style>
 </head>
-<body class="bg-white text-black font-sans selection:bg-black selection:text-neon">
+<body class="bg-white text-nova-text font-body antialiased selection:bg-nova-navy selection:text-white">
 
-    <!-- WhatsApp Floating (Brutalist Style) -->
-    <a href="https://wa.me/34600000000" class="fixed bottom-8 right-8 z-50 bg-black text-neon w-16 h-16 flex items-center justify-center border-4 border-neon shadow-[4px_4px_0px_black] hover:shadow-[8px_8px_0px_black] transition-all font-black text-2xl">
-        WA
+    <!-- WhatsApp Elegant -->
+    <a href="https://wa.me/34600000000" class="fixed bottom-8 right-8 z-50 bg-white text-[#25D366] w-14 h-14 flex items-center justify-center rounded-full shadow-hover hover:scale-110 transition-transform duration-300 border border-slate-100">
+        <i class="fab fa-whatsapp text-3xl"></i>
     </a>
 
     <!-- Nav -->
-    <nav class="fixed w-full top-0 z-40 bg-white border-b-4 border-black">
-        <div class="flex justify-between items-stretch h-20">
-            <a href="index.html" class="flex items-center px-8 font-mono text-3xl font-bold tracking-tighter bg-neon border-r-4 border-black hover:bg-black hover:text-neon transition-colors">
-                CONSTRUCTA /// MADRID
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-40 border-b border-slate-100 transition-all duration-300">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-nova-navy text-white rounded flex items-center justify-center font-head font-bold">N</div>
+                <span class="font-head font-medium text-lg tracking-wide text-nova-navy group-hover:text-nova-blue transition-colors">NOVA CONSTRUCTORA</span>
             </a>
             
-            <div class="hidden md:flex flex-1 justify-end">
-                <a href="proyectos.html" class="flex items-center px-8 border-l-4 border-black font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-widest text-sm">
-                    [01] Proyectos
-                </a>
-                <a href="manifiesto.html" class="flex items-center px-8 border-l-4 border-black font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-widest text-sm">
-                    [02] Manifiesto
-                </a>
-                <a href="presupuesto.html" class="flex items-center px-12 bg-black text-white font-bold hover:bg-neon hover:text-black transition-colors uppercase tracking-widest text-sm">
-                    Inicia Obra ->
-                </a>
+            <div class="hidden md:flex gap-10 text-sm font-medium text-slate-500">
+                <a href="index.html" class="text-nova-navy">Inicio</a>
+                <a href="proyectos.html" class="hover:text-nova-blue transition-colors">Proyectos</a>
+                <a href="presupuesto.html" class="hover:text-nova-blue transition-colors">Servicios</a>
+                <a href="presupuesto.html" class="hover:text-nova-blue transition-colors">Contacto</a>
             </div>
+
+            <a href="presupuesto.html" class="hidden md:block bg-nova-navy text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-nova-blue transition-colors shadow-soft hover:shadow-hover">
+                Solicitar Presupuesto
+            </a>
         </div>
     </nav>
 
-    <main class="pt-20">
-        <!-- Hero: Typography & Grid -->
-        <section class="relative min-h-[90vh] flex flex-col border-b-4 border-black relative">
-            <div class="absolute inset-0 grid-bg pointer-events-none"></div>
-            
-            <div class="flex-1 flex flex-col justify-center px-6 md:px-12 pt-20">
-                <h1 class="font-mono font-bold leading-[0.85] uppercase" style="font-size: clamp(4rem, 15vw, 12rem);">
-                    Reformas<br>
-                    <span class="bg-black text-white px-2">Radicales</span><br>
-                    Madrid
+    <!-- Hero -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <span class="text-nova-blue font-medium tracking-wider text-sm uppercase mb-6 block fade-in">Madrid & alrededores</span>
+                <h1 class="text-5xl lg:text-7xl font-head font-light text-nova-navy mb-8 leading-[1.1]">
+                    Construimos espacios que <br>
+                    <span class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-nova-navy to-nova-blue">elevan tu estándar de vida.</span>
                 </h1>
-            </div>
-
-            <!-- Marquee -->
-            <div class="border-t-4 border-black bg-neon py-4 overflow-hidden border-b-4">
-                <div class="marquee-container">
-                    <div class="marquee-content font-mono font-bold text-2xl uppercase tracking-widest">
-                        /// ALBAÑILERÍA PESADA /// ESTRUCTURAS METÁLICAS /// INSTALACIONES INDUSTRIALES /// DEMOLICIÓN TÉCNICA /// ALBAÑILERÍA PESADA /// ESTRUCTURAS METÁLICAS /// INSTALACIONES INDUSTRIALES /// DEMOLICIÓN TÉCNICA
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Statement Section -->
-        <section class="grid grid-cols-1 md:grid-cols-2 border-b-4 border-black">
-            <div class="p-12 md:p-24 border-b-4 md:border-b-0 md:border-r-4 border-black flex flex-col justify-center bg-raw text-white">
-                <h2 class="font-mono text-5xl md:text-6xl mb-8 uppercase">No somos<br>interioristas.</h2>
-                <p class="text-xl font-bold font-mono text-neon mb-4">/// SOMOS CONSTRUCTORES</p>
-                <p class="text-lg leading-relaxed text-gray-400">
-                    Odiamos el pladur mal puesto y las juntas que no casan. En Constructa nos obsesiona la estructura, el material crudo y la ejecución técnica perfecta. Si buscas cojines bonitos, llama a otro. Si quieres tirar un muro de carga, llámanos.
+                <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-xl font-light">
+                    Especialistas en reformas integrales y obra nueva. Fusionamos ingeniería técnica con acabados de alta gama para crear hogares excepcionales.
                 </p>
-            </div>
-            <div class="relative min-h-[500px]">
-                <img src="https://images.unsplash.com/photo-1706449850337-a3879b43ad9a?ixlib=rb-4.1.0&q=80" class="absolute inset-0 w-full h-full object-cover grayscale contrast-125" alt="Estructura de hormigón">
-                <div class="absolute inset-0 bg-neon mix-blend-multiply opacity-40"></div>
-            </div>
-        </section>
-
-        <!-- Services List (Brutalist List) -->
-        <section class="bg-white">
-            <div class="grid grid-cols-1">
-                <!-- Item 1 -->
-                <div class="group border-b-4 border-black hover:bg-black hover:text-white transition-colors cursor-pointer">
-                    <a href="presupuesto.html" class="block p-8 md:p-16 flex flex-col md:flex-row justify-between items-start md:items-center">
-                        <h3 class="text-4xl md:text-6xl font-mono font-bold uppercase group-hover:translate-x-4 transition-transform">01. Demolición</h3>
-                        <p class="text-sm font-bold border-2 border-black px-4 py-1 rounded-full group-hover:border-white group-hover:bg-neon group-hover:text-black mt-4 md:mt-0">VER DETALLES</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="proyectos.html" class="bg-nova-navy text-white px-8 py-4 rounded-full font-medium hover:bg-nova-blue transition-all text-center shadow-soft hover:shadow-hover">
+                        Ver Portfolio
                     </a>
-                </div>
-                <!-- Item 2 -->
-                <div class="group border-b-4 border-black hover:bg-black hover:text-white transition-colors cursor-pointer">
-                    <a href="presupuesto.html" class="block p-8 md:p-16 flex flex-col md:flex-row justify-between items-start md:items-center">
-                        <h3 class="text-4xl md:text-6xl font-mono font-bold uppercase group-hover:translate-x-4 transition-transform">02. Estructura</h3>
-                        <p class="text-sm font-bold border-2 border-black px-4 py-1 rounded-full group-hover:border-white group-hover:bg-neon group-hover:text-black mt-4 md:mt-0">VER DETALLES</p>
-                    </a>
-                </div>
-                <!-- Item 3 -->
-                <div class="group border-b-4 border-black hover:bg-black hover:text-white transition-colors cursor-pointer">
-                    <a href="presupuesto.html" class="block p-8 md:p-16 flex flex-col md:flex-row justify-between items-start md:items-center">
-                        <h3 class="text-4xl md:text-6xl font-mono font-bold uppercase group-hover:translate-x-4 transition-transform">03. Instalaciones</h3>
-                        <p class="text-sm font-bold border-2 border-black px-4 py-1 rounded-full group-hover:border-white group-hover:bg-neon group-hover:text-black mt-4 md:mt-0">VER DETALLES</p>
+                    <a href="presupuesto.html" class="bg-white text-nova-navy border border-slate-200 px-8 py-4 rounded-full font-medium hover:border-nova-navy transition-all text-center">
+                        Contactar
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <!-- Hero Image Abstract -->
+        <div class="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+            <img src="https://images.unsplash.com/photo-1698945298325-8902550a45dd?ixlib=rb-4.1.0&q=80&w=1080" class="w-full h-full object-cover opacity-90 mask-image-left" alt="Interior minimalista">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent"></div>
+        </div>
+    </header>
 
-        <!-- Data Grid -->
-        <section class="grid grid-cols-2 md:grid-cols-4 border-b-4 border-black bg-neon">
-            <div class="p-8 border-r-4 border-b-4 md:border-b-0 border-black text-center">
-                <p class="text-5xl font-mono font-bold">15</p>
-                <p class="text-xs font-bold uppercase">Años Picando</p>
+    <!-- Features -->
+    <section class="py-24 bg-nova-gray">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-soft flex items-center justify-center text-nova-blue mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-drafting-compass text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-head font-medium text-nova-navy mb-3">Planificación Precisa</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Sin sorpresas ni retrasos. Cronogramas detallados y seguimiento semanal de obra.</p>
+                </div>
+                <div class="group">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-soft flex items-center justify-center text-nova-blue mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-hard-hat text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-head font-medium text-nova-navy mb-3">Ejecución Técnica</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Equipos propios cualificados. Control de calidad riguroso en cada fase constructiva.</p>
+                </div>
+                <div class="group">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-soft flex items-center justify-center text-nova-blue mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-check-circle text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-head font-medium text-nova-navy mb-3">Garantía Total</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Servicio post-venta premium. Garantizamos nuestros acabados por escrito.</p>
+                </div>
             </div>
-            <div class="p-8 border-r-4 border-b-4 md:border-b-0 border-black text-center">
-                <p class="text-5xl font-mono font-bold">340</p>
-                <p class="text-xs font-bold uppercase">Obras Totales</p>
-            </div>
-            <div class="p-8 border-r-4 border-black text-center">
-                <p class="text-5xl font-mono font-bold">0%</p>
-                <p class="text-xs font-bold uppercase">Sobrecostes</p>
-            </div>
-            <div class="p-8 text-center bg-black text-white flex flex-col justify-center">
-                <p class="text-xs font-bold uppercase mb-2">Estado Actual</p>
-                <p class="text-xl font-mono text-neon animate-pulse">● ACEPTANDO OBRAS</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <footer class="bg-black text-white p-12 md:p-24">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h4 class="font-mono text-4xl mb-8 uppercase">Madrid<br>Central</h4>
-                <p class="font-mono text-xl">C/ INDUSTRIAL, 88<br>NAVE 4<br>MADRID 28000</p>
-            </div>
-            <div class="flex flex-col justify-between items-start md:items-end">
-                <a href="mailto:obra@constructa.madrid" class="font-mono text-2xl md:text-4xl underline decoration-neon decoration-4 underline-offset-8 hover:bg-neon hover:text-black transition-colors mb-8">
-                    OBRA@CONSTRUCTA.MADRID
+    <!-- Selected Projects -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-head font-light text-nova-navy mb-4">Proyectos Recientes</h2>
+                    <div class="h-0.5 w-20 bg-nova-blue"></div>
+                </div>
+                <a href="proyectos.html" class="text-sm font-medium text-nova-navy hover:text-nova-blue transition-colors flex items-center gap-2">
+                    Ver todos los proyectos <i class="fas fa-arrow-right text-xs"></i>
                 </a>
-                <p class="text-gray-500 text-sm uppercase">© 2026 CONSTRUCTA INC. NO BS.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="group cursor-pointer">
+                    <div class="h-[400px] overflow-hidden rounded-2xl relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1742415106160-594d07f6cc23?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Reforma Piso Salamanca">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <h3 class="text-2xl font-head font-medium text-nova-navy group-hover:text-nova-blue transition-colors">Ático Barrio Salamanca</h3>
+                    <p class="text-slate-500 text-sm mt-2">Reforma Integral • 180m²</p>
+                </article>
+                <article class="group cursor-pointer">
+                    <div class="h-[400px] overflow-hidden rounded-2xl relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1721244654394-36a7bc2da288?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Oficinas Norte">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <h3 class="text-2xl font-head font-medium text-nova-navy group-hover:text-nova-blue transition-colors">Sede Corporativa Norte</h3>
+                    <p class="text-slate-500 text-sm mt-2">Adecuación Oficinas • 450m²</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-nova-navy text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <h4 class="font-head text-2xl mb-6">NOVA</h4>
+                    <p class="text-slate-400 font-light max-w-sm">Construyendo el futuro de Madrid con integridad, diseño y precisión técnica desde 2010.</p>
+                </div>
+                <div>
+                    <h5 class="font-medium mb-6">Contacto</h5>
+                    <ul class="space-y-4 text-slate-400 font-light text-sm">
+                        <li>C/ Velázquez, 45, Madrid</li>
+                        <li>+34 910 000 000</li>
+                        <li>hola@novaconstructora.es</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-medium mb-6">Legal</h5>
+                    <ul class="space-y-4 text-slate-400 font-light text-sm">
+                        <li><a href="#" class="hover:text-white">Aviso Legal</a></li>
+                        <li><a href="#" class="hover:text-white">Privacidad</a></li>
+                        <li><a href="#" class="hover:text-white">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-slate-500 text-xs">
+                © 2026 Nova Constructora S.L. Todos los derechos reservados.
             </div>
         </div>
     </footer>
