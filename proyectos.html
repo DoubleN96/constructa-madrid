@@ -3,78 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos | CONSTRUCTA</title>
+    <title>Proyectos | NOVA Constructora</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { 'mono': ['Oswald', 'sans-serif'], 'sans': ['Archivo', 'sans-serif'] },
-                    colors: { 'neon': '#FAFF00', 'raw': '#1a1a1a' }
+                    fontFamily: { 'head': ['Outfit', 'sans-serif'], 'body': ['Plus Jakarta Sans', 'sans-serif'] },
+                    colors: { 'nova-navy': '#1E293B', 'nova-blue': '#3B82F6', 'nova-gray': '#F1F5F9', 'nova-text': '#334155' }
                 }
             }
         }
     </script>
-    <style>
-        .brutal-card { border: 4px solid black; transition: transform 0.1s; }
-        .brutal-card:hover { transform: translate(-8px, -8px); box-shadow: 12px 12px 0px black; }
-    </style>
 </head>
-<body class="bg-white text-black font-sans">
+<body class="bg-white text-nova-text font-body">
 
-    <nav class="fixed w-full top-0 z-40 bg-white border-b-4 border-black">
-        <div class="flex justify-between items-stretch h-20">
-            <a href="index.html" class="flex items-center px-8 font-mono text-3xl font-bold tracking-tighter bg-neon border-r-4 border-black hover:bg-black hover:text-neon transition-colors">
-                CONSTRUCTA
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-40 border-b border-slate-100">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-nova-navy text-white rounded flex items-center justify-center font-head font-bold">N</div>
+                <span class="font-head font-medium text-lg tracking-wide text-nova-navy group-hover:text-nova-blue transition-colors">NOVA</span>
             </a>
-            <div class="flex items-center px-8 font-bold uppercase tracking-widest text-sm bg-black text-white">
-                Expedientes 2024-26
+            <div class="hidden md:flex gap-10 text-sm font-medium text-slate-500">
+                <a href="index.html" class="hover:text-nova-blue transition-colors">Inicio</a>
+                <a href="proyectos.html" class="text-nova-navy">Proyectos</a>
+                <a href="presupuesto.html" class="hover:text-nova-blue transition-colors">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <main class="pt-20 p-8">
-        <h1 class="font-mono text-8xl mb-12 uppercase">Ejecuciones</h1>
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl lg:text-5xl font-head font-light text-nova-navy mb-4">Portfolio Seleccionado</h1>
+            <p class="text-slate-500 mb-16 max-w-xl font-light">Una colección de nuestros trabajos más exigentes en el sector residencial y corporativo.</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            <!-- Project 1 -->
-            <article class="brutal-card bg-white relative group">
-                <div class="absolute top-4 left-4 z-10 bg-black text-white px-4 py-1 font-mono uppercase text-sm">Ref. 8842-A</div>
-                <div class="h-[400px] overflow-hidden border-b-4 border-black">
-                    <img src="https://images.unsplash.com/photo-1642756843873-b6730d855d04?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Fachada Industrial">
-                </div>
-                <div class="p-8">
-                    <h2 class="text-4xl font-mono font-bold uppercase mb-2">Nave Sector 7</h2>
-                    <p class="font-bold mb-4">/// REHABILITACIÓN ESTRUCTURAL</p>
-                    <p class="text-gray-600 mb-6">Refuerzo de vigas con fibra de carbono y sustitución de cubierta completa. 45 días de ejecución.</p>
-                    <div class="flex gap-2">
-                        <span class="border-2 border-black px-2 py-1 text-xs font-bold uppercase">Acero</span>
-                        <span class="border-2 border-black px-2 py-1 text-xs font-bold uppercase">Hormigón</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative h-80">
+                        <img src="https://images.unsplash.com/photo-1742415106160-594d07f6cc23?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project 1">
+                        <div class="absolute inset-0 bg-nova-navy/0 group-hover:bg-nova-navy/10 transition-colors"></div>
                     </div>
+                    <h3 class="text-xl font-head font-medium text-nova-navy">Residencial Velázquez</h3>
+                    <p class="text-sm text-slate-400 mt-1">Reforma Integral</p>
                 </div>
-            </article>
 
-            <!-- Project 2 -->
-            <article class="brutal-card bg-white relative group">
-                <div class="absolute top-4 left-4 z-10 bg-black text-white px-4 py-1 font-mono uppercase text-sm">Ref. 9910-B</div>
-                <div class="h-[400px] overflow-hidden border-b-4 border-black">
-                    <img src="https://images.unsplash.com/photo-1665576005564-0eeaeb59ab44?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Obreros">
-                </div>
-                <div class="p-8">
-                    <h2 class="text-4xl font-mono font-bold uppercase mb-2">Loft Brutalista</h2>
-                    <p class="font-bold mb-4">/// DEMOLICIÓN Y OBRA NUEVA</p>
-                    <p class="text-gray-600 mb-6">Conversión de taller mecánico en vivienda. Suelo de cemento pulido e instalaciones vistas.</p>
-                    <div class="flex gap-2">
-                        <span class="border-2 border-black px-2 py-1 text-xs font-bold uppercase">Residencial</span>
-                        <span class="border-2 border-black px-2 py-1 text-xs font-bold uppercase">Raw</span>
+                <!-- Project Card 2 -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative h-80">
+                        <img src="https://images.unsplash.com/photo-1721244654394-36a7bc2da288?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project 2">
                     </div>
+                    <h3 class="text-xl font-head font-medium text-nova-navy">Oficinas Castellana</h3>
+                    <p class="text-sm text-slate-400 mt-1">Obra Corporativa</p>
                 </div>
-            </article>
 
+                <!-- Project Card 3 -->
+                <div class="group cursor-pointer">
+                    <div class="rounded-2xl overflow-hidden mb-4 relative h-80">
+                        <img src="https://images.unsplash.com/photo-1695886517917-348d9e1059e7?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project 3">
+                    </div>
+                    <h3 class="text-xl font-head font-medium text-nova-navy">Chalet La Moraleja</h3>
+                    <p class="text-sm text-slate-400 mt-1">Obra Nueva</p>
+                </div>
+            </div>
         </div>
     </main>
+
+    <footer class="bg-white border-t border-slate-100 py-12 text-center text-slate-400 text-sm">
+        <p>&copy; 2026 Nova Constructora. Excelencia en cada detalle.</p>
+    </footer>
 
 </body>
 </html>
